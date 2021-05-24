@@ -59,3 +59,21 @@ def result(player, computer):
 		else:
 			print "the computer laughs as you realise you have been defeated"
 			computer_score += 1
+
+def play_again():
+	answer = input("do wanna retry? y/n")
+	if answer in ('y', 'Y', 'yes', 'Yes', "of course"):
+		return answer
+	else:
+		print("thank for playing our game!");
+
+def scores():
+	global player_score, computer_score
+	print "HIGH SCORE"
+	print "player", player_score
+	print "computer", computer_score
+
+### stating the game
+## when it's imported it won't execute the code
+if __name__ == '__main__':
+	start()
