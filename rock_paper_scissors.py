@@ -16,13 +16,17 @@ computer_score = 0
 ## call all functions
 
 def start():
-	
+
 	print("let's start a RPS game :D")
 	game()
-	while play_again():
-		game()
+	result(3,2)
 	scores()
-	play_again()
+	while play_again():
+		print("let's start a RPS game :D")
+		game()
+		result(3,2)
+		scores()
+	
 
 ## the actual game
 
@@ -96,12 +100,3 @@ def scores():
 
 if __name__ == '__main__':
 	start()
-
-
-# testing all functions
-
-# game()
-# play_again()
-# result(2,3)
-# move()
-# scores()
