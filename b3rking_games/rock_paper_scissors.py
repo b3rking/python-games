@@ -26,7 +26,6 @@ def start():
 		game()
 		result(3,2)
 		scores()
-	
 
 ## the actual game
 
