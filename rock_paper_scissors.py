@@ -16,6 +16,7 @@ computer_score = 0
 ## call all functions
 
 def start():
+	
 	print("let's start a RPS game :D")
 	game()
 	while play_again():
@@ -26,6 +27,7 @@ def start():
 ## the actual game
 
 def game():
+
 	player = move()
 	computer = random.randint(1, 3)
 	result = (player, computer)
@@ -73,6 +75,7 @@ def result(player, computer):
 ## to manage action
 
 def play_again():
+
 	answer = input("do wanna retry? y/n >>> ")
 	if answer in ('y', 'Y', 'yes', 'Yes', "of course"):
 		return True
@@ -82,6 +85,7 @@ def play_again():
 ## manage scores
 
 def scores():
+
 	global player_score, computer_score
 	print ("HIGH SCORE")
 	print ("player", player_score)
